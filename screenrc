@@ -1,0 +1,5 @@
+startup_message off
+escape ^Gg
+# replicate scrollback data for shift-pg{up,dn} action
+termcapinfo xterm ti@:te@
+termcapinfo rxvt ti@:te@ 
