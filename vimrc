@@ -11,9 +11,9 @@ set showmode
 set number
 
 set history=50        " keep 50 lines of command line history
-set tabstop=4
+set tabstop=2
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set showmatch
 set vb
 syntax on
@@ -25,4 +25,4 @@ set incsearch        " do incremental searching
 set backspace=indent,eol,start
 
 filetype plugin on
-helptags ~/.vim/doc
+"helptags ~/.vim/doc
