@@ -26,4 +26,4 @@ set backspace=indent,eol,start
 colorscheme greens
 
 filetype plugin on
-helptags ~/.vim/doc
+"helptags ~/.vim/doc
