@@ -24,6 +24,7 @@ set incsearch        " do incremental searching
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 set cursorline
+nmap gV `[v`]           " highlight last inserted text
 
 filetype plugin on
 "helptags ~/.vim/doc
