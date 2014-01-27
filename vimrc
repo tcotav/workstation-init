@@ -23,7 +23,7 @@ set showcmd        " display incomplete commands
 set incsearch        " do incremental searching
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-colorscheme greens
+set cursorline
 
 filetype plugin on
 "helptags ~/.vim/doc
