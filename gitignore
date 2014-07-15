@@ -1,3 +1,6 @@
 *.pyc
 .idea/*
-.vagrand.d/*
+.vagrant.d/*
+*~
+.*.s*p
+
