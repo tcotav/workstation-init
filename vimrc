@@ -1,5 +1,5 @@
 set foldmethod=indent
-set paste
+"set paste
 set nocompatible
 set bs=2
 set ai
