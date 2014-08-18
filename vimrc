@@ -15,7 +15,7 @@ set history=50        " keep 50 lines of command line history
 set tabstop=2
 set expandtab
 set shiftwidth=2
-set softtabstop=4
+set softtabstop=2
 set showmatch
 set vb
 syntax on
