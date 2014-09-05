@@ -30,3 +30,4 @@ nmap gV `[v`]           " highlight last inserted text
 
 "filetype plugin on
 "helptags ~/.vim/doc
+execute pathogen#infect()
