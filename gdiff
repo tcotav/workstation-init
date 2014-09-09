@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "diff with most recent checkin..."
+git diff HEAD^ HEAD $1
