@@ -1,1 +1,2 @@
-/Users/jfrancis/dev/workstation-init/gvimrc
+set gfn=Monospace\ 9
+colorscheme elflord 
