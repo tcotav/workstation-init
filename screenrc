@@ -14,6 +14,6 @@ hardstatus alwayslastline
 hardstatus string '%{= wk}[%= %{= wk}%?%-Lw%?%{= rk}%n*%f %t%?%?%{= wk}%?%+Lw%?%?%{= wk} %= ][%{r} %d/%m/%y %C %A %{k}]'
 
 screen -t
-
+setenv SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 termcapinfo xterm* ti@:te@
 termcapinfo rxvt ti@:te@
