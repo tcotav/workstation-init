@@ -1,4 +1,4 @@
-set foldmethod=indent
+"set foldmethod=indent
 "set paste
 set nocompatible
 set bs=2
@@ -38,5 +38,5 @@ au BufRead,BufNewFile *.md set filetype=markdown
 "Clear filetype flags before changing runtimepath to force Vim to reload them.
 filetype off
 filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
+"set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
