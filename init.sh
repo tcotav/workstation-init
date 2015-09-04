@@ -22,9 +22,11 @@ echo "export GOROOT=/usr/local/go" >> ~/.bashrc
 echo "export GOPATH=~/go" >> ~/.bashrc
 export GOPATH=~/go
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$GOROOT/bin
-
-echo "export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$GOROOT/bin"
 mkdir -p ~/go/src
+mkdir ~/bin
+cp ./clean ~/bin
+
+echo "export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$GOROOT/bin:~/bin" >> ~/.bashrc
 #mkdir -p ~/go/bin
 cd ~/go
 
@@ -39,3 +41,4 @@ sudo apt-get install git-flow -y
 #tar xzvf etcd-v2.1.2-linux-amd64.tar.gz
 #cd etcd-v2.1.2-linux-amd64
 #sudo ./etcd -data-dir=data &
+
