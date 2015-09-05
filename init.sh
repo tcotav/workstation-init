@@ -4,7 +4,10 @@
 
 sudo apt-get install git -y
 git clone https://github.com/tcotav/workstation-init.git
-cd workstation-init
+cd ~/workstation-init
+# confirm it's up to date
+git pull
+
 ln -s ~/workstation-init/vim ~/.vim && ln -s ~/workstation-init/tmux.conf ~/.tmux.conf && ln -s ~/workstation-init/gitignore ~/.gitignore 
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
