@@ -11,6 +11,7 @@ git pull
 ln -s ~/workstation-init/vim ~/.vim && ln -s ~/workstation-init/tmux.conf ~/.tmux.conf && ln -s ~/workstation-init/gitignore ~/.gitignore 
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
+cp gitconfig ~/.gitconfig
 
 ### install golang and dev env
 
