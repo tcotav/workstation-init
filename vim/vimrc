@@ -28,17 +28,8 @@ set backspace=indent,eol,start
 set cursorline
 nmap gV `[v`]           " highlight last inserted text
 
-au BufRead,BufNewFile *.md set filetype=markdown
+"au BufRead,BufNewFile *.md set filetype=markdown
 
-"Some Linux distributions set filetype in /etc/vimrc.
-"Clear filetype flags before changing runtimepath to force Vim to reload them.
-filetype off
-filetype plugin indent off
-"set runtimepath+=$GOROOT/misc/vim
-filetype plugin indent on
-
-"filetype plugin on
-"helptags ~/.vim/doc
 execute pathogen#infect()
-
-
+syntax on
+filetype plugin indent on

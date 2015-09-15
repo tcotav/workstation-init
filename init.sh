@@ -11,6 +11,17 @@ git pull
 ln -s ~/workstation-init/vim ~/.vim && ln -s ~/workstation-init/tmux.conf ~/.tmux.conf && ln -s ~/workstation-init/gitignore ~/.gitignore 
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
+
+# autocomplete on ubuntu
+cd ~/.vim/bundle
+git clone https://github.com/Valloric/YouCompleteMe.git
+sudo apt-get install build-essential cmake -y
+sudo apt-get install python-dev -y
+cd YouCompleteMe
+git submodule update --init --recursive
+./install.py
+
+
 cp gitconfig ~/.gitconfig
 
 ### install golang and dev env
