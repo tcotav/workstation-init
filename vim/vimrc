@@ -1,3 +1,7 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 "set foldmethod=indent
 "set paste
 set nocompatible
@@ -18,7 +22,6 @@ set shiftwidth=2
 set softtabstop=2
 set showmatch
 set vb
-syntax on
 
 "color darkblue
 set showcmd        " display incomplete commands
@@ -30,6 +33,4 @@ nmap gV `[v`]           " highlight last inserted text
 
 "au BufRead,BufNewFile *.md set filetype=markdown
 
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+
