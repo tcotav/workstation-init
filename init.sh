@@ -2,11 +2,16 @@
 
 ### Install git and basic workstation stuff
 
-sudo apt-get install git -y
-git clone https://github.com/tcotav/workstation-init.git
-cd ~/workstation-init
+#sudo apt-get install git -y
+#git clone https://github.com/tcotav/workstation-init.git
+#cd ~/workstation-init
 # confirm it's up to date
-git pull
+#git pull
+
+# delete .vimrc if it exists
+if [ -f ~/.vimrc ]; then
+  rm -f ~/.vimrc
+fi
 
 ln -s ~/workstation-init/vim ~/.vim && ln -s ~/workstation-init/tmux.conf ~/.tmux.conf && ln -s ~/workstation-init/gitignore ~/.gitignore 
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
@@ -27,9 +32,9 @@ cp gitconfig ~/.gitconfig
 ### install golang and dev env
 
 
-wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
-tar -xzvf go1.5.linux-amd64.tar.gz
-sudo mv go /usr/local
+#wget https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+#tar -xzvf go1.5.linux-amd64.tar.gz
+#sudo mv go /usr/local
 export PATH=$PATH:/usr/local/go/bin
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 export GOROOT=/usr/local/go
@@ -48,7 +53,7 @@ cd ~/go
 # get the etcd and any other packages you need
 #go get github.com/coreos/go-etcd/etcd
 
-sudo apt-get install git-flow -y
+#sudo apt-get install git-flow -y
 
 ### Set up etcd
 
