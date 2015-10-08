@@ -13,7 +13,7 @@ set autoindent
 set autowrite
 set ruler
 set showmode
-set number
+"set number
 
 set history=50        " keep 50 lines of command line history
 set tabstop=2
