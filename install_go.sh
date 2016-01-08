@@ -17,4 +17,6 @@ mkdir -p ~/go/src
 echo "export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$GOROOT/bin:~/bin" >> ~/.bashrc
 cd ~/go
 
+. ~/.bashrc
 
+go get github.com/constabulary/gb/...
