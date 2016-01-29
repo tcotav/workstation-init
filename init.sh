@@ -18,6 +18,7 @@ git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 # autocomplete on ubuntu
 cd ~/.vim/bundle
 git clone https://github.com/Valloric/YouCompleteMe.git
+sudo apt-get update
 sudo apt-get install build-essential cmake -y
 sudo apt-get install python-dev -y
 cd YouCompleteMe
