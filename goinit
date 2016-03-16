@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir bin  etc  pkg  src  vendor
+
+touch README.md
+
