@@ -15,9 +15,14 @@ ln -s ~/workstation-init/vim ~/.vim && ln -s ~/workstation-init/tmux.conf ~/.tmu
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
 
-# autocomplete on ubuntu
 cd ~/.vim/bundle
+
+# for writing
+git clone git@github.com:reedes/vim-pencil.git
+
+# autocomplete on ubuntu
 git clone https://github.com/Valloric/YouCompleteMe.git
+sudo apt-get update
 sudo apt-get install build-essential cmake -y
 sudo apt-get install python-dev -y
 cd YouCompleteMe
