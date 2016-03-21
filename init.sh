@@ -1,6 +1,12 @@
 #!/bin/bash
 
 ### Install git and basic workstation stuff
+sudo apt-get update
+if hash git 2>/dev/null; then
+  echo "found git"        
+else
+  sudo apt-get install git -y
+fi
 
 cd ~/workstation-init
 # confirm it's up to date
@@ -22,7 +28,6 @@ git clone git@github.com:reedes/vim-pencil.git
 
 # autocomplete on ubuntu
 git clone https://github.com/Valloric/YouCompleteMe.git
-sudo apt-get update
 sudo apt-get install build-essential cmake -y
 sudo apt-get install python-dev -y
 cd YouCompleteMe
