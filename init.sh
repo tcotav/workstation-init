@@ -37,8 +37,24 @@ git submodule update --init --recursive
 
 cp gitconfig ~/.gitconfig
 
-mkdir ~/bin
+mkdir -p ~/bin
 cp ./clean ~/bin
+
+
+mkdir -p ~/.tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+echo <<WOT 
+plugin manager:
+prefix + I
+
+Installs new plugins from GitHub or any other git repository
+Refreshes TMUX environment
+prefix + U
+
+updates plugin(s)
+prefix + alt + u
+
+WOT
 
 echo "export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:~/bin" >> ~/.bashrc
 
