@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+  echo "Please list which file to decrypt."
+  exit 2
+fi
+
+gpg --output $1.decrypted --decrypt $1
+

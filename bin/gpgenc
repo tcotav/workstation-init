@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+  echo "Please list which file to encrypt."
+  exit 2
+fi
+
+gpg --output $1.gpg --symmetric --cipher-algo AES256 $1
