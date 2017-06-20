@@ -15,9 +15,14 @@ fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock;
 
 # golang
-export GOROOT=/usr/local/opt/go/libexec
+#export GOROOT=/usr/local/go
+export GOROOT=/usr/local/go
 
-# docker stuff
-export DOCKER_CERT_PATH=/Users/jfrancis/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
+export GOPATH=~/working/golang
+
+export PATH=$PATH:/usr/local/go/bin:~/google-cloud-sdk/bin:~/working/golang/bin
+
+alias hoff="set +o history \(off\)"
+alias hon="set +o history \(on\)"
+
+
