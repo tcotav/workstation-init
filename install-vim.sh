@@ -6,7 +6,7 @@ mkdir -p ~/.config
 
 cat << EOF >> ~/.config/flake8
 [flake8]
-ignore = E111,E114,E225,E303,E302
+ignore = E111,E114,E225,E303,E302,E301,E304,E305,E306,E501
 EOF
 
 
