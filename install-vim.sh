@@ -1,5 +1,15 @@
 #!/bin/bash
 
+
+mkdir -p ~/.config
+
+
+cat << EOF >> ~/.config/flake8
+[flake8]
+ignore = E111,E114,E225
+EOF
+
+
 # get pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
